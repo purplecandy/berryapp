@@ -9,17 +9,67 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
-
+    <title>Berry App</title>
+    <!-- Slider and Icons CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="css/custom.css" rel="stylesheet">
+    
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!-- Custom CSS -->
     <style>
+        html {
+        height: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+}
     body {
-        padding-top: 70px;
+            overflow-x: hidden;
+        
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+        
+        /* Gradient background*/
+        }
+        .firsttile {
+            position: relative;
+            width: 100%;
+            overflow-y: hidden;
+            min-height: auto;
+            padding: 150px 0 50px;
+            background: -webkit-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+            background: -moz-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+            background: -ms-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+            background: -o-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+            background: linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+            height: 100vh;
+            
+
+            
+
     }
+        @media (min-width: 768px) {
+  firsttile {
+    min-height: 100%;
+  }
+        
+        #heading {
+            padding-top: 150px;
+                font-family: Catamaran,Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 50px;
+    color: white;
+    margin-top: -50px;
+        }
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -28,61 +78,199 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-</head>
-
-<body>
-
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> 
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Berry</a>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">About</a>
+                        <a class="page-scroll" href="#download">Download</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a class="page-scroll" href="#feature-text">Features</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a class="page-scroll" href="#changelog-text">FAQ</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
+        <!-- /.container-fluid -->
     </nav>
 
+</head>
+
+<body>
+
+
+
     <!-- Page Content -->
+    <div class="firsttile">
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>A Bootstrap Starter Template</h1>
-                <p class="lead">Complete with pre-defined file paths that you won't have to change!!</p>
-                <ul class="list-unstyled">
-                    <li>Bootstrap v3.3.7</li>
-                    <li>jQuery v1.11.1</li>
-                </ul>
+            <div class="col-lg-12 text-left">
+                <h1 id="heading" style="width:350px">Berry is a Movies and TV Shows database app.</h1>
+                <br>
+                <br>
+               <a class="btn btn-large btn-lg btn-warning outline" href="#">Tell me more!</a>
             </div>
+        </div>
         </div>
         <!-- /.row -->
 
     </div>
     <!-- /.container -->
+    
+    <div class="container">
+        <h1 id="feature-text" class="text-center">Features</h1>
+    <div class="features">
+        <div class="row">
+        <div class="col-md-6 ">
+            <div class="col-md-12"><i class="fa fa-check-square fa-2x" aria-hidden="true"></i><span class="feature-item-text"><h1>High quality database</h1></span></div>
+            <div class="col-md-12"><i class="fa fa-check-square fa-2x" aria-hidden="true"></i><span class="feature-item-text"><h1>High quality streaming</h1></span></div>
+            <div class="col-md-12"><i class="fa fa-check-square fa-2x" aria-hidden="true"></i><span class="feature-item-text"><h1>User Panel</h1></span></div>
+            <div class="col-md-12"><i class="fa fa-check-square fa-2x" aria-hidden="true"></i><span class="feature-item-text"><a href ="#slide3"><h1>Fast Download</h1></a></span></div>
+            <div class="col-md-12"><i class="fa fa-check-square fa-2x" aria-hidden="true"></i><span class="feature-item-text"><h1>Standalone!</h1></span></div>
+            <div class="col-md-12"><i class="fa fa-check-square fa-2x" aria-hidden="true"></i><span class="feature-item-text"><h1>Easy to use</h1></span></div>
+        </div>
+            <div class="col-md-6">
+            <!-- Slider -->
+<div class="carousel"
+  data-flickity='{ "freeScroll": true }'>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div id="slide3" class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+</div>
+            <!-- Slider ended --> 
+                <!-- Slider Script -->
 
+                <!-- Script ended -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Download Container -->
+    <section class="bg-primary" id="download" >
+    <div class="container">
+
+        <h1 id="download-text" class="text-center">Download Berry Now</h1>
+        <p id="download-text-sec" class="text-center">It's comepletely free!</p> 
+        
+        <div id="badges" class="text-center">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <img src="assets/google-play-badge.svg" style="width:135px; heigth:40;">
+                    <img src="assets/apple-store-badge.svg">
+                </div>
+                </div>
+        </div>
+
+    </div>
+    </section>
+    <!-- Changelog -->
+    <section id="tables">
+    <div class="container">
+        <h1 id="changelog-text" class="text-center">FAQ</h1>
+	<div class="row">
+            <div class="col-sm-offset-4 col-sm-4 text-center">
+            <div id="tab" class="btn-group" data-toggle="buttons-radio">
+              <a href="#prices2" class="btn btn-large btn-info" data-toggle="tab">Releases</a>
+              <a href="#features2" class="btn btn-large btn-info" data-toggle="tab">Changelog</a>
+                </div>
+                </div>
+                <br>
+                <br>
+        
+            <div class="tab-content" >
+                <div class="tab-pane active" id="prices2">
+                    <div class="changelog" style="height:250px;;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;" >
+                        <ul>
+                        <li>Beta - 1.0</li>
+                        <li>Beta - 1.25 </li>
+                        <li>Alpha Beta - 1.2.2</li>
+                        <li> Alpha Release - 1.3</li>
+                        <li><b>Release - 2.0</b></li>
+                        <li><b> Release X - 2.2</b></li></ul></div>
+                </div>
+                <div class="tab-pane" id="features2">
+                    <div class="changelog" style="height:250px;x;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;" >
+                     <ul>
+                        <li>Beta - 1.0</li>
+                         <p>Movies and TV Shows database added</p>
+                        <li>Beta - 1.25 </li>
+                         <p>Streaming Support Added</p>
+                        <li>Alpha Beta - 1.2.2</li>
+                         <p>Bugs added</p>
+                        <li> Alpha Release - 1.3</li>
+                         <p>Fixed previous bugs and added user panel</p>
+                        <li>Release - 2.0</li>
+                         <p>Added favoruite,report and request pages</p>
+                        <li> Release X - 2.2</li></ul>
+                    </div>
+                </div>
+                </div>
+                </div>
+        <!-- Faq-->
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        <i class="fa fa-plus"></i>&nbsp; What is the difference between Berry and Berry X ?</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body"><b> Berry</b> is a the app which is avialiable on PlayStore where Berry X is not due to the policies of Google Playstore. Berry X have some extra features such as Streaming, Downloading and User Panel.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        <i class="fa fa-plus"></i>&nbsp; How is berry completely free ?</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">We don't host any of the files everything you see is taken from the Internet and organised here. Being ad-supported Berry covers the finance for the sever side cost.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        <i class="fa fa-plus"></i>&nbsp; Privacy Policy</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">Berry is commited to protecting user privacy policy. <br><br>
+        <b>Information we collect</b><br>
+        <p>When you submit a comment or create an account we collect information such as 'Name', 'Email' and 'Social Account Link (This not mandatory)'.</p><br>
+        <b>Use of information</b><br>
+        <p>The information you provide is only used to communicate with you. We may transfer notfication related to your post.</p><br>
+        <b>Sharing of your personal informaton</b><br>
+        <p>Berry will not share any personal information with any outsiders.</p></div>
+    </div>
+  </div>
+</div>
+        </div>
+
+</section>
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
 
