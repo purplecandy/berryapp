@@ -1,3 +1,6 @@
+#land-img {
+    height: 50%;
+}
 #mainNav {
     font-family: lato;
 }
@@ -71,8 +74,8 @@ i {
 }
 
 .carousel-cell {
-  width: 55%;
-  height: 350px;
+  width: 48%;
+  height: 450px;
 
   margin-right: 10px;
   background: #8C8;
@@ -80,14 +83,15 @@ i {
   counter-increment: gallery-cell;
 }
 
-/* cell number */
-.carousel-cell:before {
+.carousel-cell img {
   display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
+  height: 450px;  
+}
+#download-x {
+    background-color: antiquewhite;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
 }
 
 #download {
@@ -119,6 +123,11 @@ i {
     color: black;
 }
 
+.bg-warning {
+  background: #d9534f;
+  background: -webkit-linear-gradient(#fdcc52, #fdc539);
+  background: linear-gradient(#fdcc52, #fdc539);
+}
 .bg-primary {
   background: #fdcc52;
   background: -webkit-linear-gradient(#fdcc52, #fdc539);
@@ -142,7 +151,7 @@ i {
 
 .changelog {
     margin: 0 auto;
-    background-color: transparent;
+    background-color: white;
     border-radius: 15px;
     width: 350px;
 }
