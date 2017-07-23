@@ -10,6 +10,7 @@
     <meta name="author" content="">
 
     <title>Berry App</title>
+    <script src="https://static.filestackapi.com/v3/filestack.js"></script>
     <!-- Slider and Icons CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -124,6 +125,10 @@
   })();
 </script>
 <gcse:search></gcse:search>
-
+<script type="text/javascript">
+  const client = filestack.init('AgCAjzEFXRlCBznPVmSM4z');
+  // Make sure to include your API key above. If you do not have any API key, you can get one here: https://dev.filestack.com/register/free
+  client.pick();
+</script>
 </body>
 </html>
